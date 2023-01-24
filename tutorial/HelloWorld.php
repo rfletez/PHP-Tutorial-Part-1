@@ -7,8 +7,8 @@
 
     <body>
         <?php 
-            echo "Hello World!";
-            echo "Wazzupp!";
+            echo("Hello World!");
+            echo("Wazzupp!");
         ?>
     </body>
 </html>
