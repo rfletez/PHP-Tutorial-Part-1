@@ -9,6 +9,7 @@
         <?php 
             echo("Hello World!");
             echo("Wazzupp!");
+            echo("<h1>Header 1</h1>");
         ?>
     </body>
 </html>
