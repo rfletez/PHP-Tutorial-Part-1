@@ -11,6 +11,9 @@
             echo("Wazzupp!");
             echo("<h1>Header 1</h1>");
             echo("<p>This is a simple paragraph.</p>");
+
+            $firstName = "";
+            $lastName = "";
         ?>
     </body>
 </html>
