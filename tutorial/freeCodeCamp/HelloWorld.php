@@ -11,7 +11,13 @@
 
     <body>
         <?php
-            echo("Hello World!");
+            echo("Hello World!!! <br>");
+
+            $characterName="John";
+            $characterAge=60;
+
+            echo("There was a man named $characterName, 
+                and he was $characterAge years old.");
         ?>
     </body>
 </html>
