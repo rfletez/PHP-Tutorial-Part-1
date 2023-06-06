@@ -34,5 +34,22 @@
     Answer: <?php echo($_GET["num1"] + $_GET["num2"]); 
     //Check the URL after submitting.
     ?>
+
+
+    <!--URL Parameters and GET & POST -->
+    <h3>POST Method example</h3>
+    <form action="UserInput.php" method="post">
+        password: <input type="password" name="password" />
+        <br>
+
+        <input type="submit" />
+    </form>
+
+    <?php
+    /*GET is less secured, by showing the data in the URL parameters
+    and letting the users see it whenever they want. POST method is more secured
+    between client and server and it will not display anything in the URL. */
+        echo($_POST["password"]);
+    ?>
 </body>
 </html>
