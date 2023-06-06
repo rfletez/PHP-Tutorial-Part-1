@@ -17,6 +17,42 @@
         echo("Number of friends: " + count($friends));
     ?>
 
+    <!--Using Checkboxes example-->
+    <h3>Using Checkboxes</h3>
+    <form action="Arrays.php" method="post">
+        Apples: <input type="checkbox" name="fruits[]" value="apples" /> 
+        Bananas: <input type="checkbox" name="fruits[]" value="bananas" /> 
+        Oranges: <input type="checkbox" name="fruits[]" value="oranges" /> 
+        Watermelons: <input type="checkbox" name="fruits[]" value="watermelons" /> 
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <?php
+        $fruits = $_POST["fruits"];
+        echo($fruits[0]);
+    ?>
+
+
+    <!--Using Associative Arrays-->
+    <h3>Using Associative Arrays</h3>
+    <form action="Arrays.php" method="post">
+        Student Name: <input type="text" name="student" />
+        <button>Submit</button>
+    </form>
+
+    <?php
+        //Associative Arrays: storing key-value pairs inside an array.
+        $grades = array("Jim"=>"A+", "Carol"=>"B-", "Tim"=>"C", "Oscar"=>"C+");
+        $grades["Marcus"] = "F";
+
+        echo("Jim's grade is " + $grades["Jim"]);
+
+        echo("Student grade: " + $grades[$_POST["student"]]);
+    ?>
+
+    <!--Functions-->
+    
     
 </body>
 </html>
