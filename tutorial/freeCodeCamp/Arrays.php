@@ -52,7 +52,14 @@
     ?>
 
     <!--Functions-->
-    
-    
+    <?php
+        function sayHi($name, $age) {
+            echo("Hello $name, you are $age years old. <br>");
+        }
+        sayHi("Mike", 25);
+
+
+    ?>
+
 </body>
 </html>
