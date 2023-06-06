@@ -67,8 +67,9 @@
 
         $cubedResult = cube(5);
         echo($cubedResult);
-        
     ?>
+
+    <!--If statements-->
 
 </body>
 </html>
