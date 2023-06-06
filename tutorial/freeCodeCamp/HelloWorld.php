@@ -26,6 +26,19 @@
         $phrase = "To be or not to be.";
         $age = 36;
         $isAlive = true;
+
+        //Strings
+        $favoriteBook = strtoupper("the lord of the rings");
+        $favoriteSnack = strtolower("APPLE");
+
+        echo("First letter in favorite book: " + $favoriteBook[0] + " and length of title: " 
+            + strlen($favoriteBook));
+        
+        str_replace("the lord of the rings", "The Silmarillion", $favoriteBook);
+
+        echo(`New favorite book is $favoriteBook`);
+
+        echo(substr($favoriteBook, 0, 5));
     ?>
 </body>
 </html>
