@@ -39,6 +39,19 @@
         echo(`New favorite book is $favoriteBook`);
 
         echo(substr($favoriteBook, 0, 5));
+
+        //Working with Numbers
+        $num1 = 10;
+        echo(($num1 + 15) * 30 - 7);
+
+        echo(abs(-100));
+        echo(pow(2, 4));
+        echo(sqrt(144));
+        echo(min(-5, -9));
+
+        echo("Rounded number: " + round(3.4));
+        echo(ceil(4.5));
+        echo(floor(4.5));
     ?>
 </body>
 </html>
