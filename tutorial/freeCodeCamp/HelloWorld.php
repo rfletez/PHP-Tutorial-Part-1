@@ -22,7 +22,10 @@
         echo("There was a man named $characterName, 
             and he was $characterAge years old.");
 
-        
+        //Data Types
+        $phrase = "To be or not to be.";
+        $age = 36;
+        $isAlive = true;
     ?>
 </body>
 </html>
