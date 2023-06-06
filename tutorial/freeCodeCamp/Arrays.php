@@ -57,8 +57,17 @@
             echo("Hello $name, you are $age years old. <br>");
         }
         sayHi("Mike", 25);
+    ?>
 
+    <!--Return statements-->
+    <?php
+        function cube($num) {
+            return pow($num, 3);
+        }
 
+        $cubedResult = cube(5);
+        echo($cubedResult);
+        
     ?>
 
 </body>
