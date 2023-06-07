@@ -82,6 +82,18 @@
         else {
             echo("You are not tall or a male.");
         }
+
+
+        function getMax($num1, $num2, $num3) {
+            if($num1 >= $num2 && $num1 >= $num3) {
+                return $num1;
+            }
+            else if($num2 >= $num1 && $num2 >= $num3) {
+                return $num2;
+            }
+            return $num3;
+        }
+        echo("Maximum value is " + getMax(300, 500, 900));
     ?>
 
 
