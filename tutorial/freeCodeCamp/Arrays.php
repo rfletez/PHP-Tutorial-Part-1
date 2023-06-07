@@ -70,6 +70,20 @@
     ?>
 
     <!--If statements-->
+    <?php
+        $isMale = true;
+        $isTall = false;
+        if($isMale && $isTall) {
+            echo("You are tall and a male.");
+        }
+        else if($isMale && !$isTall) {
+            echo("You are a male, but not tall.");
+        }
+        else {
+            echo("You are not tall or a male.");
+        }
+    ?>
+
 
 </body>
 </html>
