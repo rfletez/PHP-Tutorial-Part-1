@@ -39,6 +39,19 @@
             echo("$luckyNumbers[$x] <br>");
         }
     ?>
+
+    <?php
+        //include statement is used to include another file into PHP.
+        /*If I want to include contents to every page, such as matching headers
+        and footers, then I can use the includes statement and it can save time
+        on not having to write the same code over and over again. */
+
+        include "Header.html";
+    ?>
+
+        <p>Hello World</p>
+
+    <?php include "Footer.html"; ?>
     
 </body>
 </html>
