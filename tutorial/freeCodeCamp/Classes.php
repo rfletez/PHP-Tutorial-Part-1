@@ -93,6 +93,7 @@
 
         $italianChef = new ItalianChef();
         $italianChef->makeChicken();
+        $italianChef->makeSpecialDish();
     ?>
 
 </body>
