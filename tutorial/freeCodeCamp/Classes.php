@@ -21,10 +21,21 @@
                 $this->author = $author;
                 $this->pages = $pages;
             }
+
+            function hasManyBooks() {
+                if($this->pages < 300) {
+                    return false;
+                }
+                return true;
+            }
         }
 
-        $book1 = new Book("The Lord of the Rings", "J.R.R. Tolkien", 456);
+        $book1 = new Book("The Lord of the Rings", "J.R.R. Tolkien", 900);
         $book2 = new Book("Sherlock Holmes", "Conan Doyle", 500);
+
+        echo($book1->hasManyBooks());
+        
     ?>    
+
 </body>
 </html>
