@@ -59,7 +59,41 @@
 
         $book1->setPages(2000);
         echo($book1->getPages());
-    ?>    
+    ?>   
+    
+    <?php 
+        //Inheritance
+        class Chef {
+            function makeChicken() {
+                echo("The chef makes chicken with Italian sauce. <br>");
+            }
+
+            function makeSalad() {
+                echo("The chef makes salad. <br>");
+            }
+
+            function makeSpecialDish() {
+                echo("The chef makes bbq ribs with special sauce. <br>");
+            }
+        }
+
+        class ItalianChef extends Chef {
+            function makePasta() {
+                echo("The chef made a delicious pasta. <br>");
+            }
+
+            function makeSpecialDish()
+            {
+                echo("The chef makes chicken parmasan with alfredo.");
+            }
+        }
+
+        $chef = new Chef();
+        $chef->makeChicken();
+
+        $italianChef = new ItalianChef();
+        $italianChef->makeChicken();
+    ?>
 
 </body>
 </html>
