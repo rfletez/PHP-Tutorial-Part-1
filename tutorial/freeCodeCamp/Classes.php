@@ -10,23 +10,45 @@
 <body>
     <?php 
         class Book {
+            //var and public are the same, but mainly use public for variables.
             var $title;
-            var $author;
-            var $pages;
+            public $author;
+            private $pages;
+            private $publisher;
 
             //constructor
             function __construct($title, $author, $pages)
             {
                 $this->title = $title;
                 $this->author = $author;
-                $this->pages = $pages;
+                $this->setPages($pages);
             }
 
+            //Object Function
             function hasManyBooks() {
                 if($this->pages < 300) {
                     return false;
                 }
                 return true;
+            }
+
+            function getPages() {
+                return $this->pages;
+            }
+            function setPages($pages) {
+                if($pages <= 0 || $pages >= 5000) {
+                    echo("Invalid number of pages");
+                }
+                else {
+                    $this->pages = $pages;
+                }
+            }
+
+            function getPublisher() {
+                return $this->publisher;
+            }
+            function setPublisher($publisher) {
+                $this->publisher = $publisher;
             }
         }
 
@@ -34,7 +56,9 @@
         $book2 = new Book("Sherlock Holmes", "Conan Doyle", 500);
 
         echo($book1->hasManyBooks());
-        
+
+        $book1->setPages(2000);
+        echo($book1->getPages());
     ?>    
 
 </body>
