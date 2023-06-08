@@ -13,17 +13,18 @@
             var $title;
             var $author;
             var $pages;
+
+            //constructor
+            function __construct($title, $author, $pages)
+            {
+                $this->title = $title;
+                $this->author = $author;
+                $this->pages = $pages;
+            }
         }
 
-        $book1 = new Book;
-        $book1->title = "The Lord of the Rings";
-        $book1->author = "J.R.R. Tolkien";
-        $book1->pages = 456;
-
-        $book2 = new Book;
-        $book2->title = "Sherlock Holmes";
-        $book2->author = "Conan Doyle";
-        $book2->pages = 500;
+        $book1 = new Book("The Lord of the Rings", "J.R.R. Tolkien", 456);
+        $book2 = new Book("Sherlock Holmes", "Conan Doyle", 500);
     ?>    
 </body>
 </html>
